@@ -30,28 +30,15 @@ it's a simple website that allow us to Survey How was the learning experience th
  ## ScreenShots: <a name = "screen-shots"></a>
 <h3 align='left'>Main Screen</h3>
 
-![Capture](https://user-images.githubusercontent.com/88618793/184661181-14be7b8b-44d8-4ef0-a082-1b3e6870d8e7.PNG)
+![Capture](https://user-images.githubusercontent.com/88618793/184736847-2be7cb30-83e6-4863-9de7-647e97caa97c.PNG)
 
- <h3 align='left'>When you click "Add Resource" button</h3>
+ <h3 align='left'>When you enter name and your experience</h3>
 
-![Capture 2PNG](https://user-images.githubusercontent.com/88618793/184661176-fcd7e4f6-dff1-475c-9e50-2f9a8f4aaa14.PNG)
+![Capture2](https://user-images.githubusercontent.com/88618793/184737248-9157ff99-4907-4b5e-9788-1315762717b6.PNG)
 
-<h3 align='left'>then if you add title, description, and url</h3>
+<h3 align='left'>then you will show you experience in the list</h3>
 
-![Capture3](https://user-images.githubusercontent.com/88618793/184661219-6b9b38a1-bd79-43fc-afca-f656edf082d8.PNG)
-
-
-<h3 align='left'>it will appear in Resources, When you click "Stored Resource" button </h3>
-
-![Capture4](https://user-images.githubusercontent.com/88618793/184661244-3fee97f6-f7d2-4d76-8c4e-d683a65939bd.PNG)
-
-<h3 align='left'>if you want to delete it, press 'delete' button</h3>
-
-![Capture5](https://user-images.githubusercontent.com/88618793/184661359-d3a3cc29-e7c3-4bc8-a3c8-f61dbbb408ab.PNG)
-
-<h3 align='left'>it will disappear</h3>
-
-![Capture6](https://user-images.githubusercontent.com/88618793/184661383-50bd4dc3-a04c-4652-9c4e-f39a8ed569ed.PNG)
+![Capture3](https://user-images.githubusercontent.com/88618793/184737572-009f2711-dfd1-4473-a710-12bf23c40bb3.PNG)
 
 ## Contributors <a name = "Contributors"></a>
 
