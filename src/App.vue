@@ -1,16 +1,18 @@
 <template>
-  <learning-survey @survey-submit="storeSurvey"></learning-survey>
-  <user-experiences :results="savedSurveyResults"></user-experiences>
+  <survey-form @survey-submit="storeSurvey"></survey-form>
+  <survey-results :results="savedSurveyResults"></survey-results>
 </template>
 
 <script>
-import LearningSurvey from './components/survey/LearningSurvey.vue';
-import UserExperiences from './components/survey/UserExperiences.vue';
+import SurveyForm from './components/survey/SurveyForm.vue';
+import SurveyResults from './components/survey/SurveyResults.vue';
+
+
 
 export default {
   components: {
-    LearningSurvey,
-    UserExperiences,
+    SurveyForm,
+    SurveyResults,
   },
   data() {
     return {

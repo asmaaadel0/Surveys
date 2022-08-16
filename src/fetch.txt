@@ -1,0 +1,73 @@
+    user experiences
+    loadExperiences() {
+      this.isLoading = true;
+      this.error = null;
+      fetch("https://vue-http-demo-333cf-default-rtdb.firebaseio.com/surveys.json")
+        .then((response) => {
+          if (response.ok) {
+            return response.json();
+          }
+        })
+        .then((data) => {
+          this.isLoading = false;
+          const results = [];
+          for (const id in data) {
+            results.push({
+              id: id,
+              name: data[id].name,
+              rating: data[id].rating,
+            });
+          }
+          this.results = results;
+          console.log(data);
+        })
+        .catch((error) => {
+          this.error = "Failed to fetch data - please try again later";
+          this.isLoading = false;
+          console.log(error);
+        });
+    },
+
+
+
+
+
+learning survey
+        submitSurvey() {
+      if (this.enteredName === "" || !this.chosenRating) {
+        this.invalidInput = true;
+        return;
+      }
+      this.invalidInput = false;
+
+      this.$emit("survey-submit", {
+        userName: this.enteredName,
+        rating: this.chosenRating,
+      });
+      this.error = null;
+      fetch(
+        "https://vue-http-demo-333cf-default-rtdb.firebaseio.com/surveys.json",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: this.enteredName,
+            rating: this.chosenRating,
+          }),
+        }
+      ).then(response => {
+        if(response.ok){
+          //...
+        }
+        else{
+          throw new Error('could not save data!');
+        }
+      }).catch(error => {
+        console.log(error);
+        this.error = error.message;
+      });
+      this.enteredName = "";
+      this.chosenRating = null;
+    },
