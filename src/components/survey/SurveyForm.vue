@@ -59,7 +59,7 @@ export default {
       });
       this.error = null;
       fetch(
-        "https://vue-http-demo-333cf-default-rtdb.firebaseio.com/surveys.json",
+        "https://surveys-6b952-default-rtdb.firebaseio.com/surveys.json",
         {
           method: "POST",
           headers: {
