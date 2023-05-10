@@ -59,7 +59,7 @@ export default {
       });
       this.error = null;
       fetch(
-        "https://surveys-6b952-default-rtdb.firebaseio.com/surveys.json",
+        "https://surveys-ecb39-default-rtdb.firebaseio.com/surveys.json",
         {
           method: "POST",
           headers: {
